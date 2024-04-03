@@ -1,5 +1,5 @@
 import { useFetch } from "../../hooks/useFetch";
-import { NavLink } from 'react-router-dom'
+import { NavLink } from "react-router-dom";
 
 function Articles() {
   const {
@@ -25,7 +25,7 @@ function Articles() {
             <div key={article.id} className="card">
               <h2>{article.title}</h2>
               <p>By {article.author}</p>
-              <NavLink to="">Read More</NavLink>
+              <NavLink to={`./${article.id}`}>Read More</NavLink>
             </div>
           );
         })}
